@@ -19,7 +19,6 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/explore" element={<Explore />} /> 
         <Route path="/problems" element={<Problem />} />
-
       </Routes>
     </BrowserRouter>
   )
