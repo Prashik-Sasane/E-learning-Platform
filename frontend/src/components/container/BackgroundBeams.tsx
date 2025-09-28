@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { BackgroundBeams } from "../ui/background-beams";
+import { BackgroundBeams } from "../ui/background";
 import { FeaturesSectionDemo } from "./FeaturesSectionDemo";
-import { TypewriterEffectSmoothDemo } from "../container/TypewriterEffectSmoothDemo";
+import { TypewriterEffectSmoothDemo } from "./TypewriterEffectSmoothDemo";
 import { FloatingDockDemo } from "./FloatingDockDemo";
 import { InfiniteMovingCardsDemo } from "./InfiniteMovingCardsDemo";
 import { StickyScrollRevealDemo } from "./StickyScrollRevealDemo";
-import { AppleCardsCarouselDemo } from "./AppleCardsCarouselDemo"; 
+import { AppleCardsCarouselDemo } from "./CardsCarousel"; 
 import Footer from "../Footer"; 
 import Dashboard from "./Dashboard"
 // import { TextGenerateEffectDemo } from "./TextGenerateEffectDemo";

@@ -12,7 +12,7 @@ import {
 } from "./ui/resizable-navbar";
 import { useState } from "react";
 // import { TextGenerateEffectDemo } from "./TextGenerateEffectDemo"; 
-import { BackgroundBeamsDemo } from "./container/BackgroundBeamsDemo";
+import { BackgroundBeamsDemo } from "./container/BackgroundBeams";
 import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 export function NavbarDemo() {
