@@ -1,8 +1,8 @@
-import express from "express";
-import { registerUser } from "../controllers/authController.js";
+const express = require('express');
+const { registerUser } = require('../controller/userController'); // destructure if exported as object
 
 const router = express.Router();
 
 router.post("/register", registerUser);
 
-export default router;
+module.exports = router;

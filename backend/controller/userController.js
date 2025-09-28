@@ -1,24 +1,30 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const { getDB } = require("../config/db");
-
+const bcrypt = require("bcrypt");
 
 const registerUser = (req, res) => {
-  const { email, password } = req.body;
+  const { firstName, lastName, email, password } = req.body;
+  if (!firstName || !lastName || !email || !password)
+    return res.status(400).json({ error: "All fields are required" });
+
   const db = getDB();
 
-  db.query("SELECT * FROM users WHERE email = ?", [email], async (err, results) => {
-    if (err) return res.status(500).json({ error: err.message });
-    if (results.length > 0) return res.status(400).json({ message: "User already exists" });
+  bcrypt.hash(password, 10, (err, hashedPassword) => {
+    if (err) return res.status(500).json({ error: "Server error" });
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const query =
+      "INSERT INTO users (firstName, lastName, email, password) VALUES (?, ?, ?, ?)";
 
-    db.query("INSERT INTO users (email, password) VALUES (?, ?)", [email, hashedPassword], (err) => {
-      if (err) return res.status(500).json({ error: err.message });
-      res.status(201).json({ message: "User registered successfully" });
+    db.query(query, [firstName, lastName, email, hashedPassword], (err, result) => {
+      if (err) {
+        console.error("Database error:", err.message);
+        return res.status(500).json({ error: "Database error" });
+      }
+
+      // ✅ Only one response
+      return res.status(201).json({ message: "User registered successfully" });
     });
   });
 };
 
-module.exports = {registerUser}
 
+module.exports = {registerUser};

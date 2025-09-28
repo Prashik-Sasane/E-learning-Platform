@@ -1,15 +1,23 @@
 const { getDB } = require("../config/db");
 
 const User = {
+  // Find user by email
   findByEmail: (email, callback) => {
     const db = getDB();
-    db.query("SELECT * FROM users WHERE email = ?", [email], callback);
+    db.query(
+      "SELECT * FROM users WHERE email = ?",
+      [email],
+      callback
+    );
   },
 
-  
-  create: (email, hashedPassword, callback) => {
+  create: (firstName, lastName, email, hashedPassword, callback) => {
     const db = getDB();
-    db.query("INSERT INTO users (email, password) VALUES (?, ?)", [email, hashedPassword], callback);
+    db.query(
+      "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)",
+      [firstName, lastName, email, hashedPassword],
+      callback
+    );
   }
 };
 
