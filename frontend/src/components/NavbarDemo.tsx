@@ -42,7 +42,7 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 rounded-4xl">
             <Link to="/signup">
             <NavbarButton variant="secondary">Login</NavbarButton>
             </Link>

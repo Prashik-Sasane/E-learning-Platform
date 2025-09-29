@@ -36,7 +36,7 @@ const Doubts = () => {
         alt="AI doubt solver mockup"
         height="500"
         width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
       />
     </div>
   );
@@ -58,7 +58,7 @@ const Student = () => {
         alt="Student learning resources mockup"
         height="500"
         width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
       />
     </div>
   );
@@ -80,7 +80,7 @@ const Learning = () => {
         alt="Learning experience mockup"
         height="500"
         width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
       />
     </div>
   );
@@ -102,7 +102,7 @@ const Competitive = () => {
         alt="Competitive exams prep mockup"
         height="500"
         width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
       />
     </div>
   );
@@ -124,7 +124,7 @@ const Language = () => {
         alt="Language learning mockup"
         height="500"
         width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
       />
     </div>
   );
@@ -154,7 +154,8 @@ const Career = () => {
               alt="E-learning mockup"
               height="500"
               width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4" />
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl" />
+              <button className="w-60 h-full mx-auto object-contain mt-4 p-2 bg-blue-600 rounded-4xl ml-74 cursor-pointer">Get Started</button>
           </div>
         );
       })}
