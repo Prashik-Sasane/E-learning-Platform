@@ -1,7 +1,7 @@
 const { getDB } = require("../config/db");
 
 const User = {
-  // Find user by email
+ 
   findByEmail: (email, callback) => {
     const db = getDB();
     db.query(
