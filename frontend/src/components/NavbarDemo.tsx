@@ -46,7 +46,7 @@ export function NavbarDemo() {
             <Link to="/signup">
             <NavbarButton variant="secondary">Login</NavbarButton>
             </Link>
-            <NavbarButton variant="primary">SignUp</NavbarButton>
+            <NavbarButton variant="primary">Menu</NavbarButton>
           </div>
         </NavBody>
  
@@ -89,7 +89,7 @@ export function NavbarDemo() {
                 variant="primary"
                 className="w-full"
               >
-                Book a call
+                Menu
               </NavbarButton>
             </div>
           </MobileNavMenu>

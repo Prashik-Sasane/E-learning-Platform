@@ -1,0 +1,6 @@
+grade,interests,goals,skill_level,study_hours,recommended_courses
+10,"['math','science']","college prep","beginner",2,"['Algebra Basics','Physics 101']"
+11,"['coding','web dev']","career in tech","intermediate",3,"['JavaScript Basics','HTML CSS']"
+12,"['biology','chemistry']","medical entrance exams","advanced",4,"['Organic Chemistry','Anatomy']"
+9,"['art','history']","explore creativity","beginner",1,"['World History','Art Sketching']"
+10,"['python','ai']","machine learning","advanced",5,"['Intro to ML','Neural Networks']"

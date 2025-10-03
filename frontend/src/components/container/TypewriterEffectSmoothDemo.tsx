@@ -1,6 +1,6 @@
 "use client";
 import {TypewriterEffectSmooth } from "../ui/typewriter-effect";
-
+import {Link} from "react-router-dom"
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
@@ -19,15 +19,18 @@ export function TypewriterEffectSmoothDemo() {
       <TypewriterEffectSmooth words={words} />
       <div
         className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+        <Link to="/">
         <button
-          className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+          className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm cursor-pointer">
           Join now
         </button>
+        </Link>
+        <Link to="/">
           <button
-            className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
+            className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm cursor-pointer" >
             Signup
           </button>
-    
+        </Link>
       </div>
     </div>
   );
