@@ -2,7 +2,9 @@
 
 import React from "react";
 import { Carousel, Card } from "../ui/Features";
-import DoubtAssistantPage from "../ui/DoubtAssistantPage";
+import DoubtPage from "../ui/DoubtPage";
+import ProductivityPage from "../ui/ProductivityPage";
+import SmartLearning from "../ui/SmartLearning";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -22,72 +24,19 @@ export function AppleCardsCarouselDemo() {
 
 const Doubts = () => {
   return (
-<<<<<<< Updated upstream
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
-          Clear Your Doubts Instantly with AI.
-        </span>{" "}
-        Stuck on a math problem? Confused in physics? Need help with history? 
-        Our AI-powered assistant explains step-by-step answers in simple language, 
-        tailored to your grade level. Get solutions anytime, anywhere — no waiting 
-        for a teacher.
-      </p>
-      <img
-        src="https://imgs.search.brave.com/mbFxW0iBv3IVY-u4F1aiUOOZtaUBVZZfUhgDHWmMTVo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHV0b3JpZnkuaW4v/c3RhdGljL2ltYWdl/cy9ibG9nZ2luZy5z/dmc"
-        alt="AI doubt solver mockup"
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
-      />
-    </div>
-=======
-   <DoubtAssistantPage/>
->>>>>>> Stashed changes
+   <DoubtPage/>
   );
 };
 
 const Student = () => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
-          Personalized Learning for Every Student.
-        </span>{" "}
-        Explore courses tailored to your board (CBSE/State) and grade (6th–12th). 
-        Access syllabus, reference materials, past papers, and AI-generated study 
-        plans designed just for you.
-      </p>
-      <img
-        src="https://imgs.search.brave.com/r86w1iUJeHGosK5tTtkLMaPC63KlzAUiTQ_MZQ9RCKE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tb2Nr/dXBodW50LmNvL2Nk/bi9zaG9wL3Byb2R1/Y3RzL3N0dWRlbnQt/Y29tcHV0ZXItbGVh/cm5pbmctZWR1Y2F0/aW9uLWluc2lnaHQt/Y29uY2VwdC1wc2Rf/NjA3OWVmOTZhNjAz/OF85MDB4LmpwZz92/PTE2NDc5NjM2Njg"
-        alt="Student learning resources mockup"
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
-      />
-    </div>
+    <ProductivityPage/>
   );
 };
 
 const Learning = () => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
-          Smarter Way to Learn.
-        </span>{" "}
-        Interactive video lessons, offline downloads, quizzes, and progress tracking. 
-        AI tutor available 24/7 to solve doubts instantly and explain in multiple 
-        languages for better understanding.
-      </p>
-      <img
-        src="https://imgs.search.brave.com/-RLngCYz5OrdVVaYbmYE-Pew8MAzXXMl0j2PqyjstRQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9leHBl/cmllbmNlLWxlYXJu/aW5nLWV4cG9zdXJl/LWRyYXdpbmctaWNv/bi1jb25jZXB0LXBl/b3BsZS1oYXZpbmct/ODAzMjY3MzguanBn"
-        alt="Learning experience mockup"
-        height="500"
-        width="500"
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain mt-4 rounded-3xl"
-      />
-    </div>
+   <SmartLearning/>
   );
 };
 
