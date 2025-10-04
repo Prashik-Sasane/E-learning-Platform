@@ -210,10 +210,10 @@ export const Card = ({ card, index, layout = false }: CardProps) => {
                 {card.category}
               </motion.p>
               <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
+                layoutId={layout ? `title-${""}` : undefined}
                 className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
               >
-                {card.title}
+                
               </motion.p>
               <div className="py-10">{card.content}</div>
             </motion.div>
